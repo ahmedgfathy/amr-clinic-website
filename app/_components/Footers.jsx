@@ -21,7 +21,6 @@ function Footers() {
                 <Link className="hover:opacity-75" href="/about">عن المركز</Link>
                 <Link className="hover:opacity-75" href="/services">خدماتنا</Link>
                 <Link className="hover:opacity-75" href="/strategy">منهجيتنا</Link>
-                <Link className="hover:opacity-75" href="/vision">رؤيتنا</Link>
                 <Link className="hover:opacity-75" href="/contact">اتصل بنا</Link>
               </nav>
             </div>
