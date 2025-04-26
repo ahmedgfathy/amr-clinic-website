@@ -16,7 +16,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-2xl overflow-hidden">
               <Image
-                src="/images/center-facility.jpg"
+                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf"
                 alt="مركز الأمل"
                 fill
                 className="object-cover"
@@ -58,19 +58,19 @@ export default function About() {
                 name: "د. أحمد محمد",
                 role: "أخصائي نفسي",
                 description: "خبرة 15 عاماً في علاج التوحد",
-                image: "/images/team/doctor-1.jpg"
+                image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d"
               },
               {
                 name: "د. سارة أحمد",
                 role: "معالج سلوكي",
                 description: "متخصصة في علاج ADHD",
-                image: "/images/team/doctor-2.jpg"
+                image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f"
               },
               {
                 name: "د. محمد علي",
                 role: "أخصائي تخاطب",
                 description: "خبير في تطوير مهارات التواصل",
-                image: "/images/team/doctor-3.jpg"
+                image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d"
               }
             ].map((member, index) => (
               <div key={index} className="bg-gray-50 rounded-xl p-6 text-center">

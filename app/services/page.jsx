@@ -3,18 +3,6 @@ import Image from 'next/image';
 export default function Services() {
   return (
     <main>
-      {/* Hero Section */}
-      <section className="relative py-16 bg-gradient-to-b from-teal-50 to-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">خدماتنا العلاجية</h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              نقدم مجموعة متكاملة من الخدمات العلاجية المتخصصة للأطفال المصابين بالتوحد وADHD، مع التركيز على احتياجات كل طفل بشكل فردي
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Main Services Grid */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -29,7 +17,7 @@ export default function Services() {
                   "تقييم المهارات الحركية",
                   "تقييم مهارات التواصل"
                 ],
-                image: "/images/services/diagnosis.jpg"
+                image: "https://images.unsplash.com/photo-1551884170-09fb70a3a2ed"
               },
               {
                 title: "العلاج السلوكي",
@@ -40,7 +28,7 @@ export default function Services() {
                   "تعديل السلوكيات غير المرغوبة",
                   "تطوير مهارات التواصل"
                 ],
-                image: "/images/services/behavioral.jpg"
+                image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74"
               },
               {
                 title: "العلاج الوظيفي",
@@ -51,7 +39,7 @@ export default function Services() {
                   "تنمية المهارات الحسية",
                   "دعم الاستقلالية الذاتية"
                 ],
-                image: "/images/services/occupational.jpg"
+                image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d"
               },
               {
                 title: "علاج النطق والتخاطب",
@@ -62,7 +50,7 @@ export default function Services() {
                   "دعم التواصل البصري",
                   "تنمية مهارات الفهم"
                 ],
-                image: "/images/services/speech.jpg"
+                image: "https://images.unsplash.com/photo-1517971053567-8bde93bc6a58"
               }
             ].map((service, index) => (
               <div key={index} className="bg-gray-50 rounded-2xl overflow-hidden">
@@ -88,38 +76,6 @@ export default function Services() {
                     ))}
                   </ul>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Additional Support Section */}
-      <section className="py-16 bg-teal-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">خدمات الدعم الإضافية</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "الدعم الأسري",
-                description: "جلسات إرشادية للأسر لفهم احتياجات أطفالهم وكيفية التعامل معها",
-                icon: "🤝"
-              },
-              {
-                title: "متابعة التقدم",
-                description: "تقييم دوري لتقدم الطفل وتعديل الخطة العلاجية وفقاً لذلك",
-                icon: "📈"
-              },
-              {
-                title: "برامج منزلية",
-                description: "إرشادات وتمارين يمكن تطبيقها في المنزل لدعم التطور المستمر",
-                icon: "🏠"
-              }
-            ].map((support, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
-                <div className="text-4xl mb-4">{support.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">{support.title}</h3>
-                <p className="text-gray-600">{support.description}</p>
               </div>
             ))}
           </div>

@@ -6,28 +6,28 @@ export default function News() {
       title: "افتتاح قسم جديد للعلاج الوظيفي",
       date: "15 يناير 2024",
       summary: "يسعدنا الإعلان عن افتتاح قسم متخصص للعلاج الوظيفي مجهز بأحدث المعدات والتقنيات",
-      image: "/images/news/occupational-therapy.jpg",
+      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef",
       tag: "تطوير"
     },
     {
       title: "ورشة عمل للأهالي حول التعامل مع ADHD",
       date: "10 يناير 2024",
       summary: "ورشة عمل متخصصة للأهالي تقدم استراتيجيات عملية للتعامل مع تحديات ADHD اليومية",
-      image: "/images/news/workshop.jpg",
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978",
       tag: "فعاليات"
     },
     {
       title: "برنامج تدريبي جديد للمختصين",
       date: "5 يناير 2024",
       summary: "إطلاق برنامج تدريبي متقدم للمختصين في مجال التوحد بالتعاون مع خبراء عالميين",
-      image: "/images/news/training.jpg",
+      image: "https://images.unsplash.com/photo-1577896851231-70ef18881754",
       tag: "تدريب"
     },
     {
       title: "نجاحات ملهمة: قصص من المركز",
       date: "1 يناير 2024",
       summary: "نشارككم قصص نجاح ملهمة لأطفالنا وأسرهم في رحلتهم مع المركز",
-      image: "/images/news/success.jpg",
+      image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74",
       tag: "قصص نجاح"
     }
   ];
@@ -55,7 +55,7 @@ export default function News() {
                 key={index} 
                 className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="relative h-64 w-full">
+                <div className="relative h-64">
                   <Image
                     src={article.image}
                     alt={article.title}

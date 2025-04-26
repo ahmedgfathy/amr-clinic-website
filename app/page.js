@@ -9,12 +9,12 @@ export default function Home() {
           autoPlay
           muted
           loop
+          playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/video.mp4" type="video/mp4" />
         </video>
         
-        {/* Changed the overlay from teal gradient to a neutral dark overlay */}
         <div className="absolute inset-0 bg-black/40" />
         
         <div className="relative container mx-auto px-4">
@@ -37,6 +37,14 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="relative h-48 mb-6 rounded-xl overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d"
+                  alt="Autism therapy session"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <div className="flex items-start gap-4 mb-6">
                 <div className="bg-teal-100 p-3 rounded-full">
                   <svg className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -61,6 +69,14 @@ export default function Home() {
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="relative h-48 mb-6 rounded-xl overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1543269865-cbf427effbad"
+                  alt="ADHD support session"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <div className="flex items-start gap-4 mb-6">
                 <div className="bg-amber-100 p-3 rounded-full">
                   <svg className="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -96,25 +112,38 @@ export default function Home() {
               {
                 title: "التشخيص المبكر",
                 description: "تقييم شامل وتشخيص دقيق للحالات في مراحلها المبكرة",
-                color: "teal"
+                color: "teal",
+                image: "https://images.unsplash.com/photo-1551884170-09fb70a3a2ed"
               },
               {
                 title: "العلاج السلوكي",
                 description: "برامج علاجية متخصصة تناسب كل حالة على حدة",
-                color: "amber"
+                color: "amber",
+                image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74"
               },
               {
                 title: "الدعم الأسري",
                 description: "إرشاد وتوجيه الأسر للتعامل مع التحديات اليومية",
-                color: "teal"
+                color: "teal",
+                image: "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a"
               }
             ].map((service, index) => (
               <div 
                 key={index}
-                className={`p-6 rounded-xl border-2 border-${service.color}-100 hover:border-${service.color}-300 transition-colors`}
+                className={`overflow-hidden rounded-xl border-2 border-${service.color}-100 hover:border-${service.color}-300 transition-all`}
               >
-                <h3 className="text-xl font-semibold mb-4 text-gray-800">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+                <div className="relative h-48">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-4 text-gray-800">{service.title}</h3>
+                  <p className="text-gray-600">{service.description}</p>
+                </div>
               </div>
             ))}
           </div>
