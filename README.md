@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# مركز الأمل للتوحد و ADHD
 
-## Getting Started
+موقع متخصص لمركز الأمل للتوحد واضطراب فرط الحركة وتشتت الانتباه، يقدم خدمات متكاملة للأطفال وأسرهم.
 
-First, run the development server:
+## نبذة عن المركز
+
+مركز الأمل هو مركز متخصص في تشخيص وعلاج اضطراب طيف التوحد (ASD) واضطراب فرط الحركة وتشتت الانتباه (ADHD). نقدم مجموعة شاملة من الخدمات المصممة خصيصاً لدعم الأطفال وعائلاتهم.
+
+## الخدمات الرئيسية
+
+- التشخيص المبكر والتقييم الشامل
+- العلاج السلوكي المتخصص
+- الدعم والإرشاد الأسري
+- برامج تدريبية للمختصين
+- ورش عمل توعوية للأهالي
+
+## المميزات التقنية
+
+- مبني باستخدام Next.js 15
+- تصميم متجاوب بالكامل
+- واجهة مستخدم سهلة وبسيطة
+- دعم كامل للغة العربية
+- أداء عالي وتحميل سريع
+
+## المتطلبات التقنية
+
+- Node.js 18.18.0 أو أحدث
+- pnpm كمدير للحزم
+
+## التثبيت والتشغيل
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# تثبيت الحزم
+pnpm install
+
+# تشغيل بيئة التطوير
 pnpm dev
-# or
-bun dev
+
+# بناء النسخة النهائية
+pnpm build
+
+# تشغيل النسخة النهائية
+pnpm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## هيكل المشروع
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
